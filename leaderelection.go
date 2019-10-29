@@ -78,6 +78,5 @@ func (le *leaderElection) Run() {
 
 	var stopCh = make(chan struct{})
 
-	// 初始化controller manager主流程
 	le.onStartedLeading(stopCh)
 }
